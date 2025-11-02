@@ -19,10 +19,10 @@
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
-  --font-h1-size: 1rem;
-  --font-sub1-size: 1rem;
-  --font-h2-size: 1rem;
-  --font-h3-size: 1rem;
+  --font-h1-size: 2.5rem;
+  --font-sub1-size: 1.5rem;
+  --font-h2-size: 2rem;
+  --font-h3-size: 1.5rem;
   --color-headline-bg: #0d223e;
   --color-headline-text-page: #d1e4ff;
 
@@ -54,12 +54,12 @@
 
   /* Text sizes */
   --logotype-size: 1rem;
-  --headline1-size: 2rem;
-  --headline2-size: 1rem;
-  --headline3-size: 1rem;
-  --bodytext-size: 1rem;
+  --headline1-size: 1rem;
+  --headline2-size: 1.5rem;
+  --headline3-size: 1.5rem;
+  --bodytext-size: 2rem;
   --cta-text-size: 1rem;
-  --followup-text-size: 1rem;
+  --followup-text-size: 1.2rem;
   --form-submit-size: 1rem;
 
   /* Infographics */
