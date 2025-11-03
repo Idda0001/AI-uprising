@@ -37,10 +37,51 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Artificials - Observationer</h2>
+          <p>
+            Har du observeret Artificials? Udfyld formularen nedenfor, så vi kan
+            markere området som farligt.
+          </p>
         </article>
-        <form id="webform"></form>
+        <h3>Hvor?</h3>
+        <form id="webform">
+          <label for="Postnummer"></label>
+          <input
+            type="text"
+            id="postnummer"
+            name="postnummer"
+            required
+            placeholder="Postnummer"
+          />
+          <label for="gadenavn"></label>
+          <input
+            type="text"
+            name="gadenavn"
+            id="gadenavn"
+            required
+            placeholder="Gadenavn"
+          />
+          <h3>Hvornår?</h3>
+          <label for="dato"></label>
+          <input
+            type="date"
+            name="dato"
+            id="dato"
+            required
+            placeholder="dd/mm/åååå"
+          />
+          <label for="tid"></label>
+          <input type="time" name="tid" id="tid" required placeholder="tid" />
+          <h3>Øvrig Information</h3>
+          <label for="oevrig-info"></label>
+          <input
+            type="text"
+            name="oevrig-info"
+            id="oevrig-info"
+            placeholder="F.eks. hvor mange, hvad lave de/den, hvordan opdagede du at det var Artificial...."
+          />
+          <button type="Submit">Insend</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
