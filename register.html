@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -33,53 +33,71 @@
       </nav>
     </header>
 
-    <main>
+    <main class="form">
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Artificials - Observationer</h2>
-          <p>
-            Har du observeret Artificials? Udfyld formularen nedenfor, så vi kan
-            markere området som farligt.
+          <h2>HAR DU SET ARTIFICIALS?</h2>
+          <p class="top">
+            MELD IND OG OPLYS HVOR OG HVORNÅR OBSERVATIONERNE HAR FUNDET STED
           </p>
         </article>
-        <h3>Hvor?</h3>
         <form id="webform">
-          <label for="Postnummer"></label>
-          <input
-            type="text"
-            id="postnummer"
-            name="postnummer"
-            required
-            placeholder="Postnummer"
-          />
-          <label for="gadenavn"></label>
-          <input
-            type="text"
-            name="gadenavn"
-            id="gadenavn"
-            required
-            placeholder="Gadenavn"
-          />
-          <h3>Hvornår?</h3>
-          <label for="dato"></label>
-          <input
-            type="date"
-            name="dato"
-            id="dato"
-            required
-            placeholder="dd/mm/åååå"
-          />
-          <label for="tid"></label>
-          <input type="time" name="tid" id="tid" required placeholder="tid" />
+          <h3>Hvor er The Artificials observeret?</h3>
+          <div class="form-group">
+            <label for="Postnummer">Postnummer: 0000</label>
+            <input
+              type="text"
+              id="postnummer"
+              name="postnummer"
+              required
+              placeholder="DK 0000"
+              minlength="4"
+            />
+            <p class="error-message">Udfyld venligst dette felt</p>
+          </div>
+          <div class="form-group">
+            <label for="gadenavn">Gadenavn</label>
+            <input
+              type="text"
+              name="gadenavn"
+              id="gadenavn"
+              required
+              placeholder="Gadenavn"
+              minlength="1"
+            />
+            <p class="error-message">Udfyld venligst dette felt</p>
+          </div>
+          <h3>Hvornår blev The Artificials observeret?</h3>
+          <div class="form-group">
+            <label for="dato">Dato: dd/mm/yyyy</label>
+            <input
+              type="date"
+              name="dato"
+              id="dato"
+              required
+              placeholder="dd/mm/åååå"
+            />
+            <p class="error-message">Udfyld venligst dette felt</p>
+          </div>
+          <div class="form-group">
+            <label for="tid">Tidspunkt</label>
+            <input type="time" name="tid" id="tid" required placeholder="tid" />
+            <p class="error-message">Udfyld venligst dette felt</p>
+          </div>
           <h3>Øvrig Information</h3>
-          <label for="oevrig-info"></label>
-          <input
-            type="text"
-            name="oevrig-info"
-            id="oevrig-info"
-            placeholder="F.eks. hvor mange, hvad lave de/den, hvordan opdagede du at det var Artificial...."
-          />
+          <div class="oevrig-info">
+            <label for="oevrig-info"
+              >Eks. hvor mange, hvad gjorde de, er de observeret i området
+              før...</label
+            >
+            <input
+              type="text"
+              name="oevrig-info"
+              id="oevrig-info"
+              placeholder="Øvrig information"
+            />
+          </div>
           <button type="Submit">Insend</button>
         </form>
       </section>
