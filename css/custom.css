@@ -1,21 +1,21 @@
 :root {
   /* Colours */
-  --color-bg: #87abe1; /* page background /*
+  --color-bg: #75d7cf; /* page background /*
 
   /* Header */
-  --color-head-bg: #d75294;
+  --color-head-bg: #fe852c;
 
   /* Logotype */
-  --color-logotype-bg: #0d223e;
-  --color-text-logotype: #e6edf3;
+  --color-logotype-bg: #0e1618;
+  --color-text-logotype: #ffffff;
   --font-logotype-size: 2.5rem;
 
   /* Global menu */
-  --color-menu-bg: #2e74d1;
+  --color-menu-bg: #ffcb64;
   /* Links */
-  --color-link-bg: #d1e4ff;
-  --color-link-hover: #87abe1; /* used */
-  --color-link-active: #d1e4ff; /* used */
+  --color-link-bg: #e8edff;
+  --color-link-hover: #fbb833; /* used */
+  --color-link-active: #fe852c; /* used */
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
@@ -23,12 +23,12 @@
   --font-sub1-size: 1.5rem;
   --font-h2-size: 2rem;
   --font-h3-size: 1.5rem;
-  --color-headline-bg: #0d223e;
-  --color-headline-text-page: #d1e4ff;
+  --color-headline-bg: #fe852c;
+  --color-headline-text-page: #ffffff;
 
   /* Tekst */
-  --color-text: #0d223e;
-  --color-text-inverted: #d1e4ff;
+  --color-text: #0e1618;
+  --color-text-inverted: #0e1618;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,20 +37,16 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #2e74d1;
-  --color-cta-card-bg: #0d223e;
+  --color-card-bg: #fff2d9;
+  --color-cta-card-bg: #fb6833;
   /* news-cards */
-  --color-news-bg: #509bff;
-  --color-news-bg-inverted: #e78bcb;
-  --color-cta-newscard-bg: #e78bcb;
-  --color-cta-newscard-bg-inverted: #509bff;
+  --color-news-bg: #fff2d9;
+  --color-news-bg-inverted: #ffde9e;
+  --color-cta-newscard-bg: #fb6833;
+  --color-cta-newscard-bg-inverted: #fe482c;
 
   /* Fonts */
   --font-family-sans: ui-sans-serif;
-  /* --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700; */
 
   /* Text sizes */
   --logotype-size: 1rem;
@@ -63,7 +59,7 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #2e74d1;
-  --color-infobox-1-bg: #d75294;
-  --color-infobox-2-bg: #e78bcb;
+  --color-info-bg: #fff2d9;
+  --color-infobox-1-bg: #ffde9e;
+  --color-infobox-2-bg: #edca87;
 }
