@@ -62,4 +62,28 @@
   --color-info-bg: #fff2d9;
   --color-infobox-1-bg: #ffde9e;
   --color-infobox-2-bg: #edca87;
+
+  /* forms - har selv tilføjet */
+  --form-background-color: #fff2d9;
+  --info-background-color: #ffde9e;
+  --headline-bg-color-inverted: #fe852c;
+  --headline-color-inverted: #0e1618;
+
+  --form-max-width: 900px;
+  --form-radius: 16px;
+  --form-gap: 1rem;
+  --form-padding: clamp(1rem, 2.5vw, 2rem);
+
+  --field-bg: #fffbf3;
+  --field-border: #ffd78a;
+  --field-text: #0b0b0f;
+  --field-placeholder: #b69860;
+  --field-focus: #fe852c;
+  --field-valid: #10b981;
+  --field-invalid: #ef4444;
+
+  --btn-bg: #fbb833;
+  --btn-text: #0e1618;
+  --btn-hover: #fe852c;
+  --btn-active: #ce6b25;
 }

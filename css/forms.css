@@ -30,3 +30,104 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+/* selv sat ind */
+#form-section {
+  padding: 2rem;
+}
+#webform {
+  width: 100%;
+  max-width: var(--form-max-width);
+  margin: 0 auto;
+  padding: var(--form-padding);
+  border-radius: var(--form-radius);
+  background: var(--form-background-color);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06),
+    0 8px 24px rgba(16, 24, 40, 0.06);
+  display: grid;
+  gap: var(--form-gap);
+}
+#webform h3 {
+  grid-column: 1 / -1;
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1rem;
+  text-transform: none;
+  color: #111827;
+}
+#webform label {
+  display: block;
+}
+#webform input[type="text"],
+#webform input[type="date"],
+#webform input[type="time"] {
+  width: 100%;
+  appearance: none;
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: 1.5px solid var(--field-border);
+  background: var(--field-bg);
+  color: var(--field-text);
+  font-size: 1rem;
+  line-height: 1;
+}
+#webform input::placeholder {
+  color: var(--field-placeholder);
+  opacity: 50%;
+}
+:focus-visible {
+  outline: 1px solid var(--field-focus);
+  box-shadow: 0 0 0 2px var(--field-focus);
+}
+#webform button[type="Submit"] {
+  justify-self: start;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+#webform button[type="Submit"]:hover {
+  background: var(--btn-hover);
+}
+#webform button[type="Submit"]:active {
+  background: var(--btn-active);
+}
+.form h2,
+.top {
+  padding: 1rem;
+}
+.form label {
+  opacity: 50%;
+}
+.error-message {
+  color: maroon;
+  font-size: 0.9rem;
+  display: none;
+}
+.form-group:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+.form-group:has(:user-invalid) {
+  input {
+    outline: 2px solid rgba(255, 0, 0, 0.459);
+    outline-offset: 1px;
+    border-color: maroon;
+  }
+  .error-message {
+    display: block;
+  }
+}
+.form-group:has(:user-valid) {
+  input {
+    outline: 2px solid rgba(0, 128, 0, 0.507);
+  }
+  .error-message {
+    display: none;
+  }
+}
