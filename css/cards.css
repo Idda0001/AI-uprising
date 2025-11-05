@@ -6,6 +6,11 @@
   padding: 40px 0 40px 20px;
   border-radius: var(--border-radius);
   height: minmax(200px, min-content);
+  background: radial-gradient(
+    circle,
+    rgba(255, 242, 217, 1) 70%,
+    rgba(255, 236, 194, 1) 100%
+  );
 }
 .daily_text {
   display: grid;
