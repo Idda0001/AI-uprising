@@ -109,13 +109,22 @@ nav a {
 }
 
 /* Global menu */
-header nav li a {
-  margin: 1.5rem;
+header nav li a,
+#toggle {
+  margin: 0 1.5rem;
   background-color: var(--color-link-bg);
   color: var(--color-text);
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-links);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  appearance: none;
 }
 
 /* Pilen efter menu-tekst */
@@ -129,6 +138,13 @@ nav a:hover {
 }
 
 nav a:active {
+  background-color: var(--color-link-active);
+}
+#toggle:hover {
+  background-color: var(--color-link-hover);
+}
+
+#toggle:active {
   background-color: var(--color-link-active);
 }
 
