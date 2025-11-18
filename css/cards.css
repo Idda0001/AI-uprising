@@ -6,11 +6,6 @@
   padding: 40px 0 40px 20px;
   border-radius: var(--border-radius);
   height: minmax(200px, min-content);
-  background: radial-gradient(
-    circle,
-    rgba(255, 242, 217, 1) 70%,
-    rgba(255, 236, 194, 1) 100%
-  );
 }
 .daily_text {
   display: grid;
@@ -73,10 +68,20 @@
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
-.news_card .cta_btn {
+.news_card .cta_btn,
+.cta_btn_inverted {
   justify-self: center;
 }
 .cta_btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: var(--color-cta-card-bg);
+  color: var(--color-text);
+  text-decoration: none;
+  width: max-content;
+  border-radius: var(--border-radius);
+}
+.cta_btn1 {
   display: inline-block;
   padding: 0.4rem 1rem;
   background-color: var(--color-cta-card-bg);
@@ -85,14 +90,29 @@
   width: max-content;
   border-radius: var(--border-radius);
 }
+.cta_btn_inverted {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: var(--color-cta-newscard-bg-inverted);
+  color: var(--color-text);
+  text-decoration: none;
+  width: max-content;
+  border-radius: var(--border-radius);
+}
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
 }
-.news_card:nth-of-type(2n) .cta_btn {
-  background-color: var(--color-cta-newscard-bg-inverted);
+
+.news_card:nth-of-type(2n) {
+  background-color: var(--color-news-bg-inverted);
   color: var(--color-text);
 }
-.cta_btn:after {
+.cta_btn {
+  color: var(--color-cta-text);
+}
+.cta_btn:after,
+.cta_btn1:after,
+.cta_btn_inverted:after {
   content: "\2192";
   margin-left: 1rem;
 }
