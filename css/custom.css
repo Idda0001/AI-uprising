@@ -20,8 +20,8 @@
 
   /* Headlines og rubrik */
   --font-h1-size: 2.5rem;
-  --font-sub1-size: 1.5rem;
   --font-h2-size: 2rem;
+  --font-sub1-size: 1.5rem;
   --font-h3-size: 1.5rem;
   --color-headline-bg: light-dark(#161b1e, #151a1e);
   --color-headline-text-page: light-dark(#fffae2, #e5e1cb);
