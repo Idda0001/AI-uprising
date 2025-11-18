@@ -2,11 +2,7 @@ html {
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
-  background: linear-gradient(
-    90deg,
-    rgba(117, 215, 207, 1) 70%,
-    rgba(163, 217, 212, 1) 100%
-  );
+  color-scheme: light;
 }
 
 header {
